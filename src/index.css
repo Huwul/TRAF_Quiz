@@ -1,0 +1,248 @@
+/* styles.css */
+
+/* Genel sayfa düzeni */
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 75px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+.prev {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.back {
+  display: flex;
+  align-items: center; 
+}
+
+.icon {
+  margin-right: 5px; 
+  display: flex;
+  align-items: center; 
+}
+p {
+  color: #666;
+}
+
+/* Quiz bölümü stilleri */
+.ProgressBar {
+  margin-bottom: 20px;
+}
+
+.ProgressBar div {
+  transition: width 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.Question {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Question img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Answer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.Answer button {
+  flex: 0 0 calc(50% - 10px);
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+.Answer button:hover {
+  background-color: #0056b3;
+}
+
+.Score {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Timer {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Review {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.Review h3 {
+  margin-bottom: 10px;
+}
+
+.Review p {
+  margin-bottom: 5px;
+}
+
+.AllReviews details {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.AllReviews summary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #0056b3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.AllReviews summary:hover {
+  background-color: #0056b3;
+}
+
+.AllReviews h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* App.css */
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+ 
+}
+.catlist{
+  text-align: start;
+}
+
+.başlık{
+  color: rgb(31, 31, 31);
+  font-size: 50px;
+  font-weight: bold;
+}
+p {
+  color: rgb(31, 31, 31);
+  font-size: 20px;
+}
+
+/* Quiz başlatma düğmesi */
+.StartQuizButton {
+  display: block;
+  margin-top: 30px!important;
+  margin: 15px auto;
+  padding: 10px 50px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.StartQuizButton:hover {
+  background-color: #0056b3;
+}
+
+.prev{
+  transform: translate(2px, -5px);
+
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+.sources{
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.testt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.LowestCategory{
+  text-align: center;
+  transform: translate(0px, -10px);
+}
+.low{
+  color: #333;
+  font-size: 25px;
+}
